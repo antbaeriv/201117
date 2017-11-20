@@ -23,8 +23,8 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void ejecutaURL(View v){
-        Intent intent = new Intent(Intent.ACTION_WEB_SEARCH);
-        intent.setData(Uri.parse(uri.getText().toString()));
+        Uri url = Uri.parse(uri.getText().toString());
+        Intent intent = new Intent(Intent.ACTION_VIEW,url);
         startActivity(intent);
     }
 
