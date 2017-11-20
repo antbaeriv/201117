@@ -9,7 +9,7 @@ import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
 
-    static EditText uri;
+    EditText uri;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,7 +19,6 @@ public class MainActivity extends AppCompatActivity {
 
     public void inicializarUI(){
         uri = findViewById(R.id.txtURL);
-        //probando
     }
 
 
