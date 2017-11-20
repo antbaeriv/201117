@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void inicializarUI(){
         uri = findViewById(R.id.txtURL);
+        //probando
     }
 
 
