@@ -27,7 +27,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void ejecutaURL(View v){
         Uri url = Uri.parse(uri.getText().toString());
-        Intent intent = new Intent(Intent.ACTION_VIEW,url);
+        Intent intent = new Intent(Intent.ACTION_VIEW);
+        intent.setData(url);
         startActivity(intent);
     }
 
